@@ -11,3 +11,20 @@
 #password {
   background-image: url(../images/photo-1637087383682-40f325297582.jpg);
 }
+
+/* https://unsplash.com/photos/Plso5cHu9w0 */
+#texteditor {
+  background-image: url(../images/kelly-sikkema-Plso5cHu9w0-unsplash.jpg);
+  background-position: center;
+}
+
+/* https://unsplash.com/photos/PGnqT0rXWLs */
+#social {
+  background-image: url(../images/helena-lopes-PGnqT0rXWLs-unsplash.jpg);
+  background-position: center;
+}
+
+#quiz {
+  background-image: url(../images/emily-morter-8xAA0f9yQnE-unsplash.jpg);
+  background-position: center;
+}

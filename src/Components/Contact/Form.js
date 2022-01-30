@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import FormElement from './FormElement'
-import { validateEmail } from './utils/helpers';
 
 export default function Form() {
-  const [values, setValues] = useState({
+  const initialValues = {
     username: "",
     email: "",
     message: "",
-  });
+  }
+  const [values, setValues] = useState(initialValues);
 
   const inputs = [
     {
@@ -18,7 +18,6 @@ export default function Form() {
       label: "Full Name",
       errorMessage: "*Required: Please enter a name",
       required: true,
-      pattern: `\w+`
     },
     {
       id: 2,
@@ -47,6 +46,7 @@ export default function Form() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    setValues({ ...initialValues });
   };
 
   return (
@@ -54,7 +54,7 @@ export default function Form() {
       <div className='mt-2'>
         <p className="text-danger"></p>
       </div>
-      <form className="form col-12 col-lg-6" onSubmit={handleFormSubmit}>
+      <form className="form col-12 col-lg-6">
         {inputs.map((input) => (
           <FormElement
             key={input.id}
@@ -63,7 +63,7 @@ export default function Form() {
             onChange={handleInputChange}
           />
         ))}
-        <button type="button" className="btn btn-primary mt-5">
+        <button className="btn btn-primary mt-5" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>

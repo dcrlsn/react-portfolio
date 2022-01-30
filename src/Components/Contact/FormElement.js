@@ -30,7 +30,7 @@ const FormElement = ({ id, name, type, placeholder, label, required, errorMessag
           rows="5"
           required={required}
         />
-        <span>{errorMessage}</span>
+        <span className="error">{errorMessage}</span>
       </div>
     );
   } else {
@@ -49,7 +49,7 @@ const FormElement = ({ id, name, type, placeholder, label, required, errorMessag
           className="form-control mt-2"
           required={required}
         />
-        <span>{errorMessage}</span>
+        <span className="error">{errorMessage}</span>
       </div>
     );
   }

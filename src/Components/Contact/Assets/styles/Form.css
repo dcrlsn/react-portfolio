@@ -1,10 +1,10 @@
-span {
+.error {
   font-size: 12px;
   padding: 3px;
   color: red;
   visibility: hidden;
 }
 
-textarea:invalid[focused="true"]~span, input:invalid[focused="true"]~span {
+textarea:invalid[focused="true"]~span, input:invalid[focused="true"]~.error {
   visibility: unset;
 }
