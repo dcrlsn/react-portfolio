@@ -1,43 +1,58 @@
 import React from "react";
+import { useState } from "react";
+import './Assets/styles/Form.css'
 
 
 
-function FormElement({ value, name, handleInputChange }) {
-  let input = name
-  if (name === "userName") {
-    input = "text"
-  } else if (name === "message") input = "textarea"
-  let placeholder = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()
-  if (name === "message") {
+const FormElement = ({ id, name, type, placeholder, label, required, errorMessage, handleInputChange }) => {
+  const [focused, setFocused] = useState(false);
+
+  const handleFocus = (e) => {
+    setFocused(true);
+  };
+
+  if (name === 'message') {
     return (
-      <>
-        <label for={name} className="mt-2">{placeholder}</ label>
+      <div>
+        <label
+          className="mt-2"
+        >{label}</label>
         <textarea
-          rows="5"
-          value={value || ''}
+          key={id}
           name={name}
-          onChange={handleInputChange}
-          type={input}
           placeholder={placeholder}
+          type={type}
+          onChange={handleInputChange}
+          onBlur={handleFocus}
+          onFocus={() => setFocused(true)}
+          focused={focused.toString()}
           className="form-control mt-2"
+          rows="5"
+          required={required}
         />
-      </>
-    )
+        <span>{errorMessage}</span>
+      </div>
+    );
   } else {
     return (
-      <>
-        <label for={(name === "userName") ? "Full Name" : name} className="mt-2">{placeholder}</ label>
+      <div>
+        <label>{label}</label>
         <input
-          value={value || ''}
-          name={(name)}
-          onChange={handleInputChange}
-          type={input}
+          key={id}
+          name={name}
           placeholder={placeholder}
+          type={type}
+          onChange={handleInputChange}
+          onBlur={handleFocus}
+          onFocus={() => setFocused(true)}
+          focused={focused.toString()}
           className="form-control mt-2"
+          required={required}
         />
-      </>
-    )
+        <span>{errorMessage}</span>
+      </div>
+    );
   }
-}
+};
 
 export default FormElement

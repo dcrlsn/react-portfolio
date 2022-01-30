@@ -12,15 +12,15 @@ const Navigation = ({ currentPage, handlePageChange }) => {
           <Nav className="me-auto">
             <Nav.Link href="#about"
               onClick={() => handlePageChange('About')}
-              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+              className={currentPage === 'About' ? 'nav-link active me-3' : 'nav-link me-3'}
             >About</Nav.Link>
             <Nav.Link href="#projects"
               onClick={() => handlePageChange('Projects')}
-              className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+              className={currentPage === 'Projects' ? 'nav-link active me-3' : 'nav-link me-3'}
             >Projects</Nav.Link>
             <Nav.Link href="#contact"
               onClick={() => handlePageChange('Contact')}
-              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</Nav.Link>
+              className={currentPage === 'Contact' ? 'nav-link active me-3' : 'nav-link me-3'}>Contact</Nav.Link>
             <Nav.Link
               href="./assets/Resume.pdf"
               download
