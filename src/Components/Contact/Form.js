@@ -28,11 +28,11 @@ export default function Form() {
   };
 
   return (
-    <div className='container'>
+    <div className='container d-flex justify-content-center'>
       <div className='mt-2'>
         <p className="text-danger">{errorMessage}</p>
       </div>
-      <form className="form">
+      <form className="form col-12 col-lg-6">
         <FormElement
           value={email}
           name={"email"}
