@@ -1,6 +1,5 @@
 import React from "react";
 import './Assets/styles/Projects.css'
-import Featured from "./Featured";
 import Card from "./Card";
 
 export default function Projects() {
@@ -10,7 +9,8 @@ export default function Projects() {
     github: "https://github.com/gluupo/gamer-connect-reviews",
     description: "A full stack, responsive video game review site",
     id: "gamer",
-    deployed: "https://gamer-connect-123789.herokuapp.com/"
+    deployed: "https://gamer-connect-123789.herokuapp.com/",
+    featured: true
   }, {
     name: "Weather Tunes",
     github: "https://github.com/dcrlsn/weather-tunes",
@@ -43,16 +43,15 @@ export default function Projects() {
     deployed: "https://dcrlsn.github.io/code-quiz/"
   }]
 
-  const unfeatured = projects.slice(1, projects.length)
+  // const unfeatured = projects.slice(1, projects.length)
 
   return (
     <div className="container py-4" id="projects">
       <div className="pb-3 mb-4 border-bottom">
         <h4 className="fs-4 text-muted">Projects</h4>
       </div>
-      <Featured {...projects[0]} />
-      <div className="row align-items-md-stretch">
-        {unfeatured.map(project => (
+      <div className="row justify-content-between d-flex">
+        {projects.map(project => (
           <Card {...project} />
         ))}
       </div>

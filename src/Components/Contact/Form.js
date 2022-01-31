@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import FormElement from './FormElement'
 
+const initialValues = {
+  userName: "",
+  email: "",
+  message: "",
+}
 export default function Form() {
-  const initialValues = {
-    username: "",
-    email: "",
-    message: "",
-  }
   const [values, setValues] = useState(initialValues);
 
   const inputs = [
@@ -40,13 +40,13 @@ export default function Form() {
   ]
 
   const handleInputChange = (e) => {
-    setValues((e) => ({ ...values, [e.target.name]: e.target.value }))
+    setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   };
 
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    setValues({ ...initialValues });
+    setValues(initialValues)
   };
 
   return (
@@ -54,7 +54,7 @@ export default function Form() {
       <div className='mt-2'>
         <p className="text-danger"></p>
       </div>
-      <form className="form col-12 col-lg-6">
+      <form className="form col-12 col-lg-6" onSubmit={handleFormSubmit}>
         {inputs.map((input) => (
           <FormElement
             key={input.id}
@@ -63,7 +63,7 @@ export default function Form() {
             onChange={handleInputChange}
           />
         ))}
-        <button className="btn btn-primary mt-5" onClick={handleFormSubmit}>
+        <button className="btn btn-primary mt-5">
           Submit
         </button>
       </form>
