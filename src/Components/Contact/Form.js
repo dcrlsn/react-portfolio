@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import FormElement from './FormElement'
+import { Container, Button } from 'react-bootstrap';
 
 const initialValues = {
   userName: "",
@@ -50,24 +51,22 @@ export default function Form() {
   };
 
   return (
-    <div className='container d-flex justify-content-center'>
-      <div className='mt-2'>
-        <p className="text-danger"></p>
-      </div>
-      <form className="form col-12 col-lg-6" onSubmit={handleFormSubmit}>
-        {inputs.map((input) => (
-          <FormElement
-            key={input.id}
-            {...input}
-            value={values[input.name]}
-            onChange={handleInputChange}
-          />
-        ))}
-        <button className="btn btn-primary mt-5">
+    <Container className='d-flex justify-content-center'>
+      <form className="form col-12 col-lg-6" onSubmit={handleFormSubmit} >
+        {
+          inputs.map((input) => (
+            <FormElement
+              key={input.id}
+              {...input}
+              value={values[input.name]}
+              onChange={handleInputChange}
+            />
+          ))
+        }
+        <Button className="mt-5">
           Submit
-        </button>
+        </Button>
       </form>
-
-    </div>
+    </Container>
   );
 }

@@ -1,27 +1,33 @@
 import CardButtons from "./Cardbuttons"
-import { Col, Container, Row } from "react-bootstrap"
+import { Col } from "react-bootstrap"
 
 export default function Card({ name, github, description, id, deployed, featured }) {
 
 
   return (
     <>
-      {(featured) ?
-        <Col xs={12} className="p-5 mb-4 text-white rounded-3 justify-content-center" id={id}>
-          <Container fluid className="py-5">
-            <h1 className="display-5 fw-bold">{name}</h1>
-            <Col md={8} className="mb-3 fs-4">{description}</Col>
-            <CardButtons github={github} deployed={deployed} />
-          </Container>
+      <Col
+        xs={12}
+        md={featured ? 12 : 6}
+        className={featured ? "p-5 mb-4 rounded-3" : 'mb-4'}
+        id={featured ? id : ''}>
+        <Col
+          className={featured ? "py-5" : "h-100 p-5 text-white rounded-3"}
+          id={!featured ? id : ''}>
+          {featured ? <h1 className="display-5 fw-bold">{name}</h1> : <h2>{name}</h2>}
+          <Col
+            md={featured ? 8 : 12}
+            className={featured ? "mb-3 fs-4" : "mb-3"}
+          > {description}</Col>
+          <CardButtons
+            deployed={deployed}
+          />
+          <br />
+          <CardButtons
+            github={github}
+          />
         </Col>
-        :
-        <Col md={6} className="mb-4">
-          <Col className="h-100 p-5 text-white rounded-3" id={id}>
-            <h2>{name}</h2>
-            <p>{description}</p>
-            <CardButtons github={github} deployed={deployed} />
-          </Col>
-        </Col>}
+      </Col>
     </>
   )
 }

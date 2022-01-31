@@ -1,6 +1,7 @@
 import React from "react";
 import './Assets/styles/Projects.css'
 import Card from "./Card";
+import { Container, Row } from "react-bootstrap";
 
 export default function Projects() {
 
@@ -28,7 +29,8 @@ export default function Projects() {
     github: "https://github.com/dcrlsn/pwa-texteditor/blob/main/client/package.json",
     description: "A simple text editor built with webpack",
     id: "texteditor",
-    deployed: "https://secret-depths-74231.herokuapp.com/"
+    deployed: "https://secret-depths-74231.herokuapp.com/",
+    featured: true
   }, {
     name: "NoSQL Social Network API",
     github: "https://github.com/dcrlsn/nosql-social-network-api",
@@ -46,15 +48,13 @@ export default function Projects() {
   // const unfeatured = projects.slice(1, projects.length)
 
   return (
-    <div className="container py-4" id="projects">
-      <div className="pb-3 mb-4 border-bottom">
-        <h4 className="fs-4 text-muted">Projects</h4>
-      </div>
-      <div className="row justify-content-between d-flex">
+    <Container className="py-4" id="projects">
+      <h4 className="pb-3 mb-4 border-bottom fs-4 text-muted">Projects</h4>
+      <Row className="text-white">
         {projects.map(project => (
           <Card {...project} />
         ))}
-      </div>
-    </div>
+      </Row>
+    </Container>
   )
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import './Assets/styles/Header.css'
-import { Navbar, Nav, Container } from "react-bootstrap"
+import { Navbar, Nav, Container, Row, Col } from "react-bootstrap"
 
 
 const Navigation = ({ currentPage, handlePageChange }) => {
-  return (<header>
+  return (<>
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -29,16 +29,15 @@ const Navigation = ({ currentPage, handlePageChange }) => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    <div className="position-relative overflow-hidden p-3 p-md-5 text-center" id="banner">
-      <div className="col-md-12 p-lg-5 mx-auto my-3 text-start">
+    <Row className="overflow-hidden p-3 p-md-5 m-0" id="banner">
+      <Col md={12} className="p-lg-5 mx-auto my-3 text-start">
         <h1
           className="text-white title">
           Daniel Carlson
         </h1>
-      </div>
-      <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
-  </header>
+      </Col>
+    </Row>
+  </>
   )
 }
 

@@ -23,9 +23,15 @@ export default function PortfolioContainer() {
 
   return (
     <div className="content d-flex flex-column min-vh-100">
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-      <Footer />
+      <header>
+        <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      </header>
+      <main>
+        {renderPage()}
+      </main>
+      <footer className="row justify-content-between align-items-center py-3 border-top mt-auto">
+        <Footer />
+      </footer>
     </div>
   );
 }
