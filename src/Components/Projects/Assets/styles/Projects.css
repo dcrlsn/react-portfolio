@@ -1,21 +1,25 @@
 #gamer {
   background-image: url(../images/shubham-dhage-iWI7N9x5-NY-unsplash.jpg);
+  background-size: cover;
 }
 
 /* https://unsplash.com/photos/2QUvkQTBh5s */
 #weather {
   background-image: url(../images/johannes-plenio-2QUvkQTBh5s-unsplash.jpg);
+  background-size: cover;
 }
 
 /* https://unsplash.com/photos/h1Vmg84tJeg */
 #password {
   background-image: url(../images/photo-1637087383682-40f325297582.jpg);
+  background-size: cover;
 }
 
 /* https://unsplash.com/photos/Plso5cHu9w0 */
 #texteditor {
   background-image: url(../images/kelly-sikkema-Plso5cHu9w0-unsplash.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 /* https://unsplash.com/photos/PGnqT0rXWLs */
@@ -27,4 +31,5 @@
 #quiz {
   background-image: url(../images/emily-morter-8xAA0f9yQnE-unsplash.jpg);
   background-position: center;
+  background-size: cover;
 }
