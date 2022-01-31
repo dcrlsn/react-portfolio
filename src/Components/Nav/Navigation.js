@@ -29,7 +29,7 @@ const Navigation = ({ currentPage, handlePageChange }) => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    <div className="position-relative overflow-hidden p-3 p-md-5 text-center" id="banner">
+    <div className="position-relative overflow-hidden p-3 p-md-5" id="banner">
       <Container>
         <Col className="p-lg-5 mx-auto my-3 text-start">
           <h1
@@ -37,7 +37,6 @@ const Navigation = ({ currentPage, handlePageChange }) => {
             Daniel Carlson
           </h1>
         </Col>
-        <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
       </Container>
     </div>
   </header>
