@@ -7,7 +7,9 @@ export default function CardButtons({ deployed, github }) {
       size="lg"
       className={deployed ? "mb-3" : ''}
       href={deployed ? deployed : github}
-      target="_blank">{deployed ? 'Click Here' : 'Github'}
+      target="_blank"
+      rel="noreferrer"
+    >{deployed ? 'Click Here' : 'Github'}
     </Button>
   </>
   )
