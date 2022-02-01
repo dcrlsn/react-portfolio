@@ -17,7 +17,6 @@ export default function PortfolioContainer() {
     }
     return <Contact />;
   };
-  document.body.style.minHeight = "100vh";
 
   const handlePageChange = (page) => setCurrentPage(page);
 
