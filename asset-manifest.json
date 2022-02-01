@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.5b2ffac4.css",
+    "main.js": "/react-portfolio/static/js/main.285acbe1.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/banner.jpg": "/react-portfolio/static/media/banner.52f27c0614ed3aaca946.jpg",
+    "static/media/emily-morter-8xAA0f9yQnE-unsplash.jpg": "/react-portfolio/static/media/emily-morter-8xAA0f9yQnE-unsplash.bd6aefd301c9917e4731.jpg",
+    "static/media/helena-lopes-PGnqT0rXWLs-unsplash.jpg": "/react-portfolio/static/media/helena-lopes-PGnqT0rXWLs-unsplash.9cc4e397bcc706783d3a.jpg",
+    "static/media/kelly-sikkema-Plso5cHu9w0-unsplash.jpg": "/react-portfolio/static/media/kelly-sikkema-Plso5cHu9w0-unsplash.dd4932260e847aabe60a.jpg",
+    "static/media/shubham-dhage-iWI7N9x5-NY-unsplash.jpg": "/react-portfolio/static/media/shubham-dhage-iWI7N9x5-NY-unsplash.d631560b8efc902e4b04.jpg",
+    "static/media/photo-1637087383682-40f325297582.jpg": "/react-portfolio/static/media/photo-1637087383682-40f325297582.40951fa2ad0c8a018cd7.jpg",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.05faf0b32395624fde17.pdf",
+    "static/media/johannes-plenio-2QUvkQTBh5s-unsplash.jpg": "/react-portfolio/static/media/johannes-plenio-2QUvkQTBh5s-unsplash.3427c93297aa86275905.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.5b2ffac4.css.map": "/react-portfolio/static/css/main.5b2ffac4.css.map",
+    "main.285acbe1.js.map": "/react-portfolio/static/js/main.285acbe1.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b2ffac4.css",
+    "static/js/main.285acbe1.js"
+  ]
+}
