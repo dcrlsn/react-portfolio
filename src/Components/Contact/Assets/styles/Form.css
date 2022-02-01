@@ -5,6 +5,6 @@
   visibility: hidden;
 }
 
-textarea:invalid[focused="true"]~span, input:invalid[focused="true"]~.error {
+textarea:invalid[focused="true"]~.error, input:invalid[focused="true"]~.error {
   visibility: unset;
 }
