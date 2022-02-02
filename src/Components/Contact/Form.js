@@ -7,6 +7,7 @@ const initialValues = {
   email: "",
   message: "",
 }
+
 export default function Form() {
   const [values, setValues] = useState(initialValues);
 

@@ -1,6 +1,7 @@
 import React from "react";
 import './Assets/styles/Header.css'
 import { Navbar, Nav, Container, Col } from "react-bootstrap"
+import Resume from './Assets/Resume.pdf'
 
 
 const Navigation = ({ currentPage, handlePageChange }) => {
@@ -22,8 +23,8 @@ const Navigation = ({ currentPage, handlePageChange }) => {
               onClick={() => handlePageChange('Contact')}
               className={currentPage === 'Contact' ? 'nav-link active me-3' : 'nav-link me-3'}>Contact</Nav.Link>
             <Nav.Link
-              href="./assets/Resume.pdf"
-              download
+              href={Resume}
+              download="Daniel Carlson - Resume"
             >Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
