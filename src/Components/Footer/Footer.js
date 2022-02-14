@@ -8,7 +8,7 @@ export default function Footer() {
     <Container>
       <Row>
         <a
-          href="tel:484-894-7568"
+          href="tel:484-893-0943"
           className="text-center col-6 col-sm-3 text-muted">
           <FaPhone size={30} />
           <p>Phone</p></a>
