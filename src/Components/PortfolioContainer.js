@@ -28,7 +28,7 @@ export default function PortfolioContainer() {
       <main>
         {renderPage()}
       </main>
-      <footer className="row justify-content-between align-items-center py-3 border-top mt-auto">
+      <footer className="py-3 border-top mt-auto">
         <Footer />
       </footer>
     </div>
