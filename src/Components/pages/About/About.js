@@ -10,8 +10,7 @@ export default function About() {
       <Col className="p-xs-0 p-sm-5 mb-4 text-white bg-dark rounded-3">
         <Container fluid className="py-5 row justify-content-between">
           <Col md={4} className="order-xs-last text-center"><FaUserCircle size={150} /></Col>
-          <Col xs={12} sm={12} md={8} className="py-3 fs-5 order-xs-first">I'm a former systems administrator expanding my horizons and skillset into full-stack
-            development. With skills in HTML, CSS, Javascript, jQuery, Responsive Design, Bootstrap, and MERN Stack</Col>
+          <Col xs={12} sm={12} md={8} className="py-3 fs-5 order-xs-first">I'm a full-stack developer and former systems administrator. With skills in HTML, CSS, Javascript, jQuery, Responsive Design, Bootstrap, SQL, and MERN Stack.  I also have a passion for IoT, home automation, and snowboarding</Col>
         </Container>
       </Col>
     </Container>
