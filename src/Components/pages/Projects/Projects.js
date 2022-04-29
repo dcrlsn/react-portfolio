@@ -30,14 +30,14 @@ export default function Projects() {
     key: 3
   }, {
     name: "Password Generator",
-    github: "https://github.com/dcrlsn/weather-tunes",
+    github: "https://github.com/dcrlsn/password-generator",
     description: "Quickly generate a password of a given length",
     id: "password",
     deployed: "https://dcrlsn.github.io/password-generator/",
     key: 4
   }, {
     name: "PWA Text Editor",
-    github: "https://github.com/dcrlsn/pwa-texteditor/blob/main/client/package.json",
+    github: "https://github.com/dcrlsn/pwa-texteditor/",
     description: "A simple text editor built with webpack",
     id: "texteditor",
     deployed: "https://secret-depths-74231.herokuapp.com/",
